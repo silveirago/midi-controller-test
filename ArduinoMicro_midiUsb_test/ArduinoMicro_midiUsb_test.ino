@@ -7,7 +7,7 @@ void setup() {
 
 void loop() {
   for (int i = 36; i < 48; i++) {
-    noteOn(0, i, 127);  // Channel 0, middle C, normal velocity
+    noteOn(0, i, 127);  // Channel 0 (0-15), middle C, normal velocity
     MidiUSB.flush();
     delay(300);
     noteOn(0, i, 0);  // Channel 0, middle C, normal velocity
